@@ -26,7 +26,7 @@ jobs:
         run: python -m pip install cibuildwheel==2.21.3
 
       - name: Build wheels
-        run: python -m cibuildwheel --output-dir wheelhouse
+        run: python -m cibuildwheel --only cp311-win_amd64 --output-dir wheelhouse
         # to supply options, put them in 'env', like:
         # env:
         #   CIBW_SOME_OPTION: value
